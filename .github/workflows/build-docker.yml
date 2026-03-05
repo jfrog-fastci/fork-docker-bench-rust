@@ -1,6 +1,9 @@
 name: Build Docker Image
 
 on:
+  push:
+    branches:
+      - fastci/benchmark/all-insights
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
